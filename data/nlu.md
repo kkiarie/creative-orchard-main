@@ -27,30 +27,46 @@
 - no way
 - not really
 
-## intent:mood_great
-- perfect
-- very good
+## intent:chitchat_creativeorchards
+- tell me about creative orchards
+- tell me about the work you do
+- what work you do
+
+## intent:chitchat_identity
+- what are you
+- bot
+- smart assistant
+- are you a bot
+- tell me about yourself
+- more about you
+
+## intent:positive
 - great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
+- good
+- awesome
+- im good thank you
+- im fine thank you
+- how are you
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+## intent:chitchat_pricing
+- what the price of getting a smart assistant
+- can i be able to buy smart assistant
+- can i able to purchase smart assistant
 
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
+## intent:chitchat_smart_assistant
+- can i get a smart assistant for my business
+- i want a smart assistant for my business
+- my business needs a smart assistant
+- can i automate my business with a smart assistant
+
+## intent:request_contact
+- contact us
+- reach out to us
+- i want to partner with you
+- setup a meeting
+
+## intent:demo_1
+- show demo
+- demo
+- live demo
+- bot demo
