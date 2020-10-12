@@ -64,6 +64,8 @@
 - reach out to us
 - i want to partner with you
 - setup a meeting
+- i need to bok an appointment and meet with you
+- schedule meeting
 
 ## intent:demo_1
 - show demo
