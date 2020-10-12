@@ -16,6 +16,8 @@ intents:
 - request_contact
 - demo_1
 - sapi
+- default_action
+- lost
 entities:
 - number
 - email
@@ -76,6 +78,9 @@ responses:
       Time: {time}"
   utter_noworries:
   - text: Thank you for submiting your data, we shall reach out to you soon!
+  utter_default:
+  - text: Sorry, i didnot understand!
+  - text: Sorry, what was that ?
 actions:
 - utter_ask_email
 - utter_ask_time

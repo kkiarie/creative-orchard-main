@@ -71,8 +71,14 @@
 - live demo
 - bot demo
 
-
 ## intent:sapi
 - sapi 
 - check cron
 - cron
+
+## intent:lost
+- whats is the weather
+- do you sell cars
+- buy me lunch
+- buy me a house
+- election
