@@ -31,7 +31,14 @@ class FormContact(FormAction):
         domain: Dict[Text, Any],
     ) -> List[Dict]:
 
-        dispatcher.utter_message(text="Hello World!")
+        data = {
+            "phone_number":tracker.get_slot("phone-number"),
+            "email":tracker.get_slot("email"),
+            "time":tracker.get_slot("time"),
+        }
+        resp = requests.post("http://thecreativeorchards.com/sting.php", json=data)
+
+        dispatcher.utter_message(template="utter_slot_values")
 
         return []
 
@@ -49,5 +56,28 @@ class ActionSelektor(Action):
         json_data = response.json()
         result +="Hello >>"+ json_data["salutation"]
         dispatcher.utter_message(text=result)
+
+        return []
+
+
+class ActionSapi(Action):
+    def name(self) -> Text:
+
+        return "action_sapi"
+
+    def run(self,dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        #  mydata ="hi how are you"
+        # response = requests.request("GET","http://thecreativeorchards.com/time.php")
+        # result = "" 
+        # json_data = response.json()
+        # result +="Hello >>"+ json_data["salutation"]
+        data = {
+            "name":"joe",
+            "id":123456789
+        }
+        resp = requests.post("http://thecreativeorchards.com/sting.php", json=data)
+        dispatcher.utter_message(text="done")
 
         return []
