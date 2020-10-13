@@ -18,6 +18,8 @@
 - of course
 - that sounds good
 - correct
+- okay
+- ok
 
 ## intent:deny
 - no
@@ -63,6 +65,7 @@
 - i want a smart assistant for my business
 - my business needs a smart assistant
 - can i automate my business with a smart assistant
+- tell me about smart assistants
 
 ## intent:request_contact
 - contact us
@@ -109,3 +112,15 @@
 - thanks
 - thanks for the assistance
 - thank you for your help
+
+## intent:joke
+- tell me a jokes
+- joke
+- jokes
+- make me laugh
+- tell me a joke
+
+## intent:laugh
+- lol
+- hahaha
+- hehehe

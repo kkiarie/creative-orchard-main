@@ -19,6 +19,8 @@ intents:
 - sapi
 - default_action
 - lost
+- joke
+- laugh
 entities:
 - number
 - email
@@ -54,8 +56,9 @@ responses:
       Artificial Intelligent:-Conversational assistant that assists in resolving complex\
       \ customer queries"
   utter_chitchat_identity:
-  - text: You can call CABY 🤓, how can i be of assistance today ?
-  - text: Im smart personal assistant,here to assist you
+  - text: Im smart personal assistant, designed and developed to assist with customer
+      queries, provide informartion about the services we offer. Also i can tell jokes.
+      Go ahead, as me to tell you a joke.
   utter_chitchat_pricing:
   - text: We offers Flexible plans,Based on your business needs we have created packages
       to help you onboard the intelligent assistant
@@ -69,7 +72,7 @@ responses:
       about your business
   utter_positive:
   - text: Great! how can be of assistance to you today?
-  - text: Great! how can i help you today?
+  - text: 👌 how can i help you today?
   utter_ask_email:
   - text: Please provide an email address that we can contact you?
   utter_ask_time:
@@ -89,6 +92,15 @@ responses:
   utter_thankyou:
   - text: 👍 You are welcome!
   - text: 🤝 any time, glad to help!
+  utter_joke:
+  - text: 😊 The best thing about Switzerland is that it`s flag is a plus 🇨🇭
+  - text: "What do you call a cow with no legs? \nGround beef."
+  - text: I'm reading a book about anti-gravity. It's impossible to put down!
+  utter_laugh:
+  - text: 😊 I do my best, as smart assistant we train hard everyday to get better
+      at what we do.You can reach out to us, together we shall create smart assistant  for your business.Do we want to continue ?
+  utter_joke_intro:
+  - text: My jokes are simple one liners, where we go!
 actions:
 - utter_ask_email
 - utter_ask_time

@@ -21,6 +21,16 @@
 * thankyou
   - utter_thankyou
 
+## tell a joke
+* joke
+  - utter_joke_intro
+  - utter_joke
+  - utter_laugh   
+* affirm
+  - form_contact
+* deny 
+  - utter_bye    
+
 ## api path
 
 * demo_1
