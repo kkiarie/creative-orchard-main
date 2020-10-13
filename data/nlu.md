@@ -76,7 +76,7 @@
 - schedule meeting
 - how can i reach out
 
-## intent:request_demo
+## intent:request_booking
 - show demo
 - demo
 - live demo
@@ -124,3 +124,7 @@
 - lol
 - hahaha
 - hehehe
+
+## intent:inform
+- [barber](my_service)
+- [salon](my_service)

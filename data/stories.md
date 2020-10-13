@@ -105,3 +105,14 @@
     - form{"name":null}
     - slot{"requested_slot":null}
     - utter_noworries
+
+
+## demo request booking
+
+* greet
+  - utter_greet
+* request_booking
+  - form_booking
+  - form{"name":"form_booking"}
+  - form{"name":null} 
+  - utter_noworries_booking  

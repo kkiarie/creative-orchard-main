@@ -21,7 +21,7 @@ class FormContact(FormAction):
     
     @staticmethod
     def required_slots(tracker):
-        return ["email","phone-number","time"]
+        return ["email","phone-number"]
 
 
     def submit(
@@ -34,7 +34,7 @@ class FormContact(FormAction):
         data = {
             "phone_number":tracker.get_slot("phone-number"),
             "email":tracker.get_slot("email"),
-            "time":tracker.get_slot("time"),
+            # "time":tracker.get_slot("time"),
         }
         resp = requests.post("http://thecreativeorchards.com/sting.php", json=data)
 
@@ -81,3 +81,32 @@ class ActionSapi(Action):
         dispatcher.utter_message(text="done")
 
         return []
+
+class FormBook(FormAction):
+
+    def name(self) -> Text:
+        return "form_book"
+    
+    @staticmethod
+    def required_slots(tracker):
+        return ["my_service","number","phone-number","time"]
+
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+
+        # data = {
+        #     "phone_number":tracker.get_slot("phone-number"),
+        #     "email":tracker.get_slot("email"),
+        #     "time":tracker.get_slot("time"),
+        # }
+        # resp = requests.post("http://thecreativeorchards.com/sting.php", json=data)
+
+        dispatcher.utter_message(template="utter_slot_values_booking")
+
+        return []
+

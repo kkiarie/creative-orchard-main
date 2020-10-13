@@ -19,7 +19,7 @@ pipeline:
     url: "http://localhost:8000"
     locale: "en"
     timezone: "Africa/Nairobi"
-    dimensions: ["time","email","phone-number"]
+    dimensions: ["time","email","phone-number","number"]
     timeout : 3
     
 

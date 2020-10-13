@@ -15,7 +15,7 @@ intents:
 - thankyou
 - request_contact
 - demo_1
-- request_demo
+- request_booking
 - sapi
 - default_action
 - lost
@@ -26,8 +26,11 @@ entities:
 - email
 - time
 - phone-number
+- my_service
 slots:
   email:
+    type: unfeaturized
+  my_service:
     type: unfeaturized
   number:
     type: unfeaturized
@@ -73,15 +76,21 @@ responses:
   utter_positive:
   - text: Great! how can be of assistance to you today?
   - text: 👌 how can i help you today?
+  utter_ask_my_service:
+  - text: Which service would you like Barber or Salon ?
   utter_ask_email:
   - text: Please provide an email address that we can contact you?
+  utter_ask_number:
+  - text: Please provide the number of people coming for {my_service} service ?
   utter_ask_time:
-  - text: Enter time ?
+  - text: What time will be coming for {my_service} service ?
   utter_ask_phone-number:
   - text: Please provide a phone number that we can reach you?
   utter_slot_values:
-  - text: "You have provide the following details\nEmails:{email}\nPhone Number:{phone-number}\n\
-      Time: {time}"
+  - text: "You have provide the following details\nEmails:{email}\nPhone Number:{phone-number}"
+  utter_slot_values_booking:
+  - text: "You have provide the following details\nBooked Service: {my_service}\n\
+      Number of People:{number}\nPhone Number:{phone-number}\nBooking Time: {time}"
   utter_noworries:
   - text: Thank you for submiting your data, we shall reach out to you soon!
   utter_default:
@@ -98,13 +107,18 @@ responses:
   - text: I'm reading a book about anti-gravity. It's impossible to put down!
   utter_laugh:
   - text: 😊 I do my best, as smart assistant we train hard everyday to get better
-      at what we do.You can reach out to us, together we shall create smart assistant  for your business.Do we want to continue ?
+      at what we do.You can reach out to us, together we shall create smart assistant  for
+      your business.Do we want to continue ?
   utter_joke_intro:
   - text: My jokes are simple one liners, where we go!
+  utter_noworries_booking:
+  - text: Booking slot values
 actions:
 - utter_ask_email
 - utter_ask_time
 - utter_ask_phone-number
+- utter_ask_number
+- utter_ask_my_service
 - utter_slot_values
 - action_selektor
 - action_sapi
