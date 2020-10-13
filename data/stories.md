@@ -69,3 +69,29 @@
     - utter_greet
 * positive
     - utter_positive
+
+## New Story
+
+* request_contact
+    - form_contact
+    - form{"name":"form_contact"}
+    - slot{"requested_slot":"email"}
+* positive{"email":"kkiarie4@gmail.com"}
+    - slot{"email":"kkiarie4@gmail.com"}
+    - form_contact
+    - slot{"email":"kkiarie4@gmail.com"}
+    - slot{"requested_slot":"phone-number"}
+* chitchat_identity
+    - utter_chitchat_identity
+* chitchat_smart_assistant{"phone-number":"(+25) 4715295492"}
+    - slot{"phone-number":"(+25) 4715295492"}
+    - form_contact
+    - slot{"phone-number":"(+25) 4715295492"}
+    - slot{"requested_slot":"time"}
+* greet{"time":"2020-10-14T00:00:00.000+03:00"}
+    - slot{"time":"2020-10-14T00:00:00.000+03:00"}
+    - form_contact
+    - slot{"time":"2020-10-14T00:00:00.000+03:00"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - utter_noworries
