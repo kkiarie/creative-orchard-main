@@ -31,6 +31,10 @@
 - tell me about creative orchards
 - tell me about the work you do
 - what work you do
+- services
+- what services do you offer
+- products
+- what are your products
 
 ## intent:chitchat_identity
 - what are you
@@ -47,6 +51,7 @@
 - im good thank you
 - im fine thank you
 - how are you
+- brilliant and you
 
 ## intent:chitchat_pricing
 - what the price of getting a smart assistant
@@ -66,15 +71,24 @@
 - setup a meeting
 - i need to bok an appointment and meet with you
 - schedule meeting
+- how can i reach out
 
-## intent:demo_1
+## intent:request_demo
 - show demo
 - demo
 - live demo
 - bot demo
+- booking demo
+- presentation
+
+## intent:demo_1
+- test api
+- api
+- api config
+- config
 
 ## intent:sapi
-- sapi 
+- sapi
 - check cron
 - cron
 
@@ -84,3 +98,14 @@
 - buy me lunch
 - buy me a house
 - election
+- anime
+- kengan
+
+## intent:thankyou
+- thank you
+- thank you so much
+- thank you very much
+- thanks alot
+- thanks
+- thanks for the assistance
+- thank you for your help
