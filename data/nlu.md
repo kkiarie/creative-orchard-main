@@ -59,6 +59,7 @@
 - what the price of getting a smart assistant
 - can i be able to buy smart assistant
 - can i able to purchase smart assistant
+- How much does it cost
 
 ## intent:chitchat_smart_assistant
 - can i get a smart assistant for my business
@@ -120,6 +121,7 @@
 - jokes
 - make me laugh
 - tell me a joke
+- Tell me a joke
 
 ## intent:laugh
 - lol
