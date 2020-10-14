@@ -146,3 +146,91 @@
     - form{"name":null}
     - slot{"requested_slot":null}
     - utter_noworries_booking
+
+## Contact + Booking form
+
+* greet
+    - utter_greet
+* request_contact
+    - form_contact
+    - form{"name":"form_contact"}
+    - slot{"requested_slot":"email"}
+* positive{"email":"test@mail.com"}
+    - slot{"email":"test@mail.com"}
+    - form_contact
+    - slot{"email":"test@mail.com"}
+    - slot{"requested_slot":"phone-number"}
+* greet{"phone-number":"(+25) 4710712167"}
+    - slot{"phone-number":"(+25) 4710712167"}
+    - form_contact
+    - slot{"phone-number":"(+25) 4710712167"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - utter_noworries
+* request_booking
+    - form_booking
+    - form{"name":"form_booking"}
+    - slot{"phone-number":"(+25) 4710712167"}
+    - slot{"requested_slot":"my_service"}
+* inform{"my_service":"barber"}
+    - slot{"my_service":"barber"}
+    - form_booking
+    - slot{"my_service":"barber"}
+    - slot{"requested_slot":"number"}
+* joke{"number":3}
+    - slot{"number":3}
+    - form_booking
+    - slot{"number":3}
+    - slot{"requested_slot":"time"}
+* positive{"time":"2020-10-15T14:00:00.000+03:00"}
+    - slot{"time":"2020-10-15T14:00:00.000+03:00"}
+    - form_booking
+    - slot{"time":"2020-10-15T14:00:00.000+03:00"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - utter_noworries_booking
+
+## Story from conversation with 915793109 on October 14th 2020
+
+    - slot{"requested_slot":"email"}
+    - slot{"email":"kkiarie4@gmail.com"}
+    - slot{"email":"kkiarie4@gmail.com"}
+    - slot{"requested_slot":"phone-number"}
+    - slot{"phone-number":"0715295492"}
+    - slot{"phone-number":"0715295492"}
+    - slot{"requested_slot":"time"}
+    - slot{"time":"2020-10-13T10:00:00.000+03:00"}
+    - slot{"time":"2020-10-13T10:00:00.000+03:00"}
+    - slot{"requested_slot":null}
+    - slot{"email":"kkiarie4@gmail.com"}
+    - slot{"phone-number":"0715295492"}
+    - slot{"time":"2020-10-13T10:00:00.000+03:00"}
+    - slot{"requested_slot":null}
+* greet
+    - utter_greet
+* request_booking
+    - form_booking
+    - form{"name":"form_booking"}
+    - slot{"phone-number":"0715295492"}
+    - slot{"time":"2020-10-13T10:00:00.000+03:00"}
+    - slot{"requested_slot":"my_service"}
+* inform{"my_service":"Barber"}
+    - slot{"my_service":"Barber"}
+    - slot{"my_service":"Barber"}
+    - form_booking
+    - slot{"my_service":"Barber"}
+    - slot{"requested_slot":"number"}
+* deny{"number":4}
+    - slot{"number":4}
+    - slot{"number":4}
+    - form_booking
+    - slot{"number":4}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - utter_noworries_booking
+* laugh
+    - slot{"my_service":"Barber"}
+    - slot{"number":4}
+    - utter_joke_intro
+    - utter_joke
+    - utter_laugh
