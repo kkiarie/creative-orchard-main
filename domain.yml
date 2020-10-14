@@ -98,6 +98,7 @@ responses:
   - text: Sorry, what was that ?
   utter_bye:
   - text: Bye
+  - text: Later!
   utter_thankyou:
   - text: 👍 You are welcome!
   - text: 🤝 any time, glad to help!
