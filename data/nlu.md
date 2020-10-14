@@ -83,6 +83,7 @@
 - bot demo
 - booking demo
 - presentation
+- I would like to book an appointment
 
 ## intent:demo_1
 - test api
