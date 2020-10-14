@@ -113,6 +113,9 @@ responses:
   - text: My jokes are simple one liners, where we go!
   utter_noworries_booking:
   - text: Booking slot values
+  utter_come_later:
+  - text: You can always reach out to us any time.
+  - text: ''
 actions:
 - utter_ask_email
 - utter_ask_time
@@ -122,6 +125,7 @@ actions:
 - utter_slot_values
 - action_selektor
 - action_sapi
+- utter_come_later
 forms:
 - form_contact
 - form_booking
