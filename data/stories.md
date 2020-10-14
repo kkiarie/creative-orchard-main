@@ -29,7 +29,7 @@
 * affirm
   - form_contact
 * deny 
-  - utter_bye    
+  - utter_bye
 
 ## api path
 
@@ -106,7 +106,6 @@
     - slot{"requested_slot":null}
     - utter_noworries
 
-
 ## demo request booking
 
 * greet
@@ -115,4 +114,35 @@
   - form_booking
   - form{"name":"form_booking"}
   - form{"name":null} 
-  - utter_noworries_booking  
+  - utter_noworries_booking
+
+## Demo Booking Happy Path
+
+* greet
+    - utter_greet
+* request_booking
+    - form_booking
+    - form{"name":"form_booking"}
+    - slot{"requested_slot":"my_service"}
+* inform{"my_service":"salon"}
+    - slot{"my_service":"salon"}
+    - form_booking
+    - slot{"my_service":"salon"}
+    - slot{"requested_slot":"number"}
+* chitchat_creativeorchards{"number":2}
+    - slot{"number":2}
+    - form_booking
+    - slot{"number":2}
+    - slot{"requested_slot":"phone-number"}
+* goodbye{"phone-number":"(+25) 4715295492"}
+    - slot{"phone-number":"(+25) 4715295492"}
+    - form_booking
+    - slot{"phone-number":"(+25) 4715295492"}
+    - slot{"requested_slot":"time"}
+* deny{"time":"2020-10-14T10:00:00.000+03:00"}
+    - slot{"time":"2020-10-14T10:00:00.000+03:00"}
+    - form_booking
+    - slot{"time":"2020-10-14T10:00:00.000+03:00"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - utter_noworries_booking
