@@ -114,7 +114,7 @@ responses:
   utter_noworries_booking:
   - text: Booking slot values
   utter_come_later:
-  - text: You can always reach out to us any time.
+  - text: You can always reach out to us any time 😉
   - text: ''
 actions:
 - utter_ask_email
