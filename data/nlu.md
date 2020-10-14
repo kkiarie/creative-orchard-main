@@ -76,6 +76,8 @@
 - i need to bok an appointment and meet with you
 - schedule meeting
 - how can i reach out
+- What's are the process needed to get started
+- Launching a personal assistant
 
 ## intent:request_booking
 - show demo
